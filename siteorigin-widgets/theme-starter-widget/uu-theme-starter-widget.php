@@ -6,13 +6,19 @@ Author: Brian Thurber
 Author URI: https://umc.utah.edu
 */
 
+/**
+ * PLACEHOLDER: This is a boilerplate. When creating your widget, rename this class and all
+ * references (e.g. Theme_Starter_Widget → Your_Widget_Name). Update the Widget ID, Name,
+ * description, folder name, and load-widgets.php entry. Do not deploy the "Theme Starter Widget"
+ * to production—it is a template only.
+ */
 class Theme_Starter_Widget extends SiteOrigin_Widget {
   function __construct() {
       parent::__construct(
-            'theme-starter-widget', // Widget ID
-            __('Theme Starter Widget', 'theme-starter-widget-text-domain'), // Widget Name
+            'theme-starter-widget', // Widget ID — change to your widget slug (e.g. my-custom-widget)
+            __('Theme Starter Widget', 'theme-starter-widget-text-domain'), // Widget Name — change to your widget display name
             array(
-                'description'   => __('Another SiteOrigin widget.', 'theme-starter-widget-text-domain'),
+                'description'   => __('Another SiteOrigin widget.', 'theme-starter-widget-text-domain'), // placeholder — change to your widget description
                 'panels_icon'   => 'uu-so-widget-icon',
                 'panels_groups' => array('umc-widgets'),
             ),

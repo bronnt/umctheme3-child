@@ -81,7 +81,6 @@ if (class_exists('SiteOrigin_Widget')) {
 
         public function get_instance_css($instance) {
             if (is_admin()) {
-                error_log('[DEBUG] Allowing LESS processing in admin for widget: ' . $this->id_base);
                 return parent::get_instance_css($instance);
             }
 
