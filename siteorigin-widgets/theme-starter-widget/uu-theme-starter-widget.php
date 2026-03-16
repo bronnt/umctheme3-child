@@ -12,8 +12,9 @@ class Theme_Starter_Widget extends SiteOrigin_Widget {
             'theme-starter-widget', // Widget ID
             __('Theme Starter Widget', 'theme-starter-widget-text-domain'), // Widget Name
             array(
-                'description' => __('Another SiteOrigin widget.', 'theme-starter-widget-text-domain'),
-                //'groups' => array('umc-widgets') // Explicitly set the group
+                'description'   => __('Another SiteOrigin widget.', 'theme-starter-widget-text-domain'),
+                'panels_icon'   => 'uu-so-widget-icon',
+                'panels_groups' => array('umc-widgets'),
             ),
             array(),
             //FIELDS (FORM OPTIONS)
